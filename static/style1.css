@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:pink;
+}
+header{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.container{
+    max-width:900px;
+    margin:0 auto;
+}
+.apply_box{
+    max-width:500px;
+    padding:20px;
+    background:white;
+    margin:100px auto;
+    box-shadow:4px 3px 5px rgba(1,1,1,0.1);
+    border-radius:10px;
+}
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+p{
+    text-align:center;
+    font-size:20px;
+    color:green;
+    font-weight:bold;
+}
+.form_content{
+    display:grid;
+    gap:10px;
+}
+label{
+    font-size:20px;
+    margin-top:10px;
+}
+input,textarea{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.button_container{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+button{
+    background:red;
+    border:transparent solid 2px;
+    padding:5px 15px;
+    color:white;
+    border-radius:8px;
+    transition:0.3s ease-in;
+}
+button:hover{
+    background:#ccc;
+    border-radius:2px solid red;
+    color:black;
+    transition:0.3s ease-out;
+}

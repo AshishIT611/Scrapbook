@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyVote Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, {{ username }}!</h1>
+            <nav>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <div class="card">
+                <h3>Vote Now</h3>
+                <p>Cast your vote for the current elections.</p>
+            </div>
+
+            <div class="card">
+                <h3>Upcoming Elections</h3>
+                <p>View the schedule of upcoming elections.</p>
+            </div>
+
+            <div class="card">
+                <h3>Election Results</h3>
+                <p>View results of completed elections.</p>
+            </div>
+
+            <div class="card">
+                <h3>Profile</h3>
+                <p>Manage your personal profile and update information.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

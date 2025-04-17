@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrapBook</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"> 
+</head>
+<body>
+    {% block content %}
+    <header>
+        <h1>MyScrapbook</h1>
+    </header>
+    <div class="container">
+        <div class="writing">
+            <img src="{{url_for('static',filename='aaron-burden-y02jEX_B0O0-unsplash.jpg')}}" alt="writing">
+            <h2>Writing</h2>
+            <p>Life is not measured by the number of breaths we take, but by the moments that take our breath away.</p>
+            <a href="{{url_for('write')}}"><button class="btn" type="submit">Share your thoughts</button></a>
+        </div>
+        <div class="reading">
+            <img src="{{url_for('static',filename='aaron-burden-4eWwSxaDhe4-unsplash.jpg')}}" alt="reading">
+            <h2>Reading</h2>
+            <p>We don't remember days; we remember moments.</p>
+            <a href="{{url_for('read')}}"><button class="btn" type="submit">Revising memory</button></a>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
